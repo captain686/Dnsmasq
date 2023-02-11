@@ -1,0 +1,9 @@
+version: '3.5'
+services:
+    dnsmasq:
+        container_name: Dnsmasq
+        build: .
+        volumes:
+            - $PWD/dns:/root
+        tty: true
+        network_mode: host
