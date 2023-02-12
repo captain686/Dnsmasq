@@ -6,12 +6,6 @@ apt install -y dnsmasq iproute2
 
 mv /etc/dnsmasq.conf /etc/dnsmasq.conf.bak
 
-cat << EOF > /etc/resolv.dnsmasq.conf
-nameserver 8.8.8.8
-nameserver 8.8.4.4
-nameserver 1.1.1.1
-EOF
-
 cat << EOF > /dnsmasq.sh
 #! /bin/bash
 
